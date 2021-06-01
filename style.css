@@ -7,7 +7,7 @@
 }
 
 body{
-    height: 100vh;
+    height: 100%;
     background-color: #2ecc71;
     color: #fff;
 }
@@ -53,4 +53,26 @@ p{
     color: black;
     background-color: #55efc4;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 40px;
+    text-align: center;
+  }
+  .sub-title{
+    font-size: 15px;
+}
+#actual_content{
+    font-size: 20px;
+    text-align: center;
+}
+    textarea{
+        height: 100px;
+        width: 250px;
+    }
+    .btn{
+        width: 40%;
+        padding: 10px;
+    }
 }

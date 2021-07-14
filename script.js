@@ -52,6 +52,7 @@ check_btn.addEventListener('click', ()=>{
     arrStr1.forEach((item,index,arr) =>{
         if (arr[index] ===arrStr2[index]) {
             // console.log("matchig");
+            // if the single letter correct it will increment count 
             count++;
             console.log(count);
             if (count === arr.length) {
@@ -62,11 +63,13 @@ check_btn.addEventListener('click', ()=>{
                 error_content.innerHTML = `All character matching With words ${count} And With speed ${speed}` 
                 console.log("all chacterr matching");
             }else{
+                // it vil show error
                 correctWord = arr.length - parseInt(count)
                 error_content.innerHTML = `Correct word ${count} and the error words are ${correctWord} With speed ${speed}`;
                 console.log(`Correct word ${count} and error is ${correctWord}`);
             }
         }
+        // if no letters are correct
         if (arr[index] !=arrStr2[index] && count === 0) {
             error_content.innerHTML = `None of your words are correct`
         }
